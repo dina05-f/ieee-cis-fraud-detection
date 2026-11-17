@@ -1,0 +1,1840 @@
+{
+ "description": "Признаки финальной LightGBM II (набор B, 458 признаков) в порядке обучения. Источник: models/comparison_09/feature_sets.json (set_B, lgbm_categorical). Только имена и типы — значения категорий здесь не хранятся.",
+ "id_column": "TransactionID",
+ "n_features": 458,
+ "n_categorical": 41,
+ "features": [
+  {
+   "name": "TransactionAmt",
+   "kind": "numeric"
+  },
+  {
+   "name": "ProductCD",
+   "kind": "categorical"
+  },
+  {
+   "name": "card1",
+   "kind": "numeric"
+  },
+  {
+   "name": "card2",
+   "kind": "numeric"
+  },
+  {
+   "name": "card3",
+   "kind": "numeric"
+  },
+  {
+   "name": "card4",
+   "kind": "categorical"
+  },
+  {
+   "name": "card5",
+   "kind": "numeric"
+  },
+  {
+   "name": "card6",
+   "kind": "categorical"
+  },
+  {
+   "name": "addr1",
+   "kind": "numeric"
+  },
+  {
+   "name": "addr2",
+   "kind": "numeric"
+  },
+  {
+   "name": "dist1",
+   "kind": "numeric"
+  },
+  {
+   "name": "dist2",
+   "kind": "numeric"
+  },
+  {
+   "name": "P_emaildomain",
+   "kind": "categorical"
+  },
+  {
+   "name": "R_emaildomain",
+   "kind": "categorical"
+  },
+  {
+   "name": "C1",
+   "kind": "numeric"
+  },
+  {
+   "name": "C2",
+   "kind": "numeric"
+  },
+  {
+   "name": "C3",
+   "kind": "numeric"
+  },
+  {
+   "name": "C4",
+   "kind": "numeric"
+  },
+  {
+   "name": "C5",
+   "kind": "numeric"
+  },
+  {
+   "name": "C6",
+   "kind": "numeric"
+  },
+  {
+   "name": "C7",
+   "kind": "numeric"
+  },
+  {
+   "name": "C8",
+   "kind": "numeric"
+  },
+  {
+   "name": "C9",
+   "kind": "numeric"
+  },
+  {
+   "name": "C10",
+   "kind": "numeric"
+  },
+  {
+   "name": "C11",
+   "kind": "numeric"
+  },
+  {
+   "name": "C12",
+   "kind": "numeric"
+  },
+  {
+   "name": "C13",
+   "kind": "numeric"
+  },
+  {
+   "name": "C14",
+   "kind": "numeric"
+  },
+  {
+   "name": "D1",
+   "kind": "numeric"
+  },
+  {
+   "name": "D2",
+   "kind": "numeric"
+  },
+  {
+   "name": "D3",
+   "kind": "numeric"
+  },
+  {
+   "name": "D4",
+   "kind": "numeric"
+  },
+  {
+   "name": "D5",
+   "kind": "numeric"
+  },
+  {
+   "name": "D6",
+   "kind": "numeric"
+  },
+  {
+   "name": "D7",
+   "kind": "numeric"
+  },
+  {
+   "name": "D8",
+   "kind": "numeric"
+  },
+  {
+   "name": "D9",
+   "kind": "numeric"
+  },
+  {
+   "name": "D10",
+   "kind": "numeric"
+  },
+  {
+   "name": "D11",
+   "kind": "numeric"
+  },
+  {
+   "name": "D12",
+   "kind": "numeric"
+  },
+  {
+   "name": "D13",
+   "kind": "numeric"
+  },
+  {
+   "name": "D14",
+   "kind": "numeric"
+  },
+  {
+   "name": "D15",
+   "kind": "numeric"
+  },
+  {
+   "name": "M1",
+   "kind": "categorical"
+  },
+  {
+   "name": "M2",
+   "kind": "categorical"
+  },
+  {
+   "name": "M3",
+   "kind": "categorical"
+  },
+  {
+   "name": "M4",
+   "kind": "categorical"
+  },
+  {
+   "name": "M5",
+   "kind": "categorical"
+  },
+  {
+   "name": "M6",
+   "kind": "categorical"
+  },
+  {
+   "name": "M7",
+   "kind": "categorical"
+  },
+  {
+   "name": "M8",
+   "kind": "categorical"
+  },
+  {
+   "name": "M9",
+   "kind": "categorical"
+  },
+  {
+   "name": "V1",
+   "kind": "numeric"
+  },
+  {
+   "name": "V2",
+   "kind": "numeric"
+  },
+  {
+   "name": "V3",
+   "kind": "numeric"
+  },
+  {
+   "name": "V4",
+   "kind": "numeric"
+  },
+  {
+   "name": "V5",
+   "kind": "numeric"
+  },
+  {
+   "name": "V6",
+   "kind": "numeric"
+  },
+  {
+   "name": "V7",
+   "kind": "numeric"
+  },
+  {
+   "name": "V8",
+   "kind": "numeric"
+  },
+  {
+   "name": "V9",
+   "kind": "numeric"
+  },
+  {
+   "name": "V10",
+   "kind": "numeric"
+  },
+  {
+   "name": "V11",
+   "kind": "numeric"
+  },
+  {
+   "name": "V12",
+   "kind": "numeric"
+  },
+  {
+   "name": "V13",
+   "kind": "numeric"
+  },
+  {
+   "name": "V14",
+   "kind": "numeric"
+  },
+  {
+   "name": "V15",
+   "kind": "numeric"
+  },
+  {
+   "name": "V16",
+   "kind": "numeric"
+  },
+  {
+   "name": "V17",
+   "kind": "numeric"
+  },
+  {
+   "name": "V18",
+   "kind": "numeric"
+  },
+  {
+   "name": "V19",
+   "kind": "numeric"
+  },
+  {
+   "name": "V20",
+   "kind": "numeric"
+  },
+  {
+   "name": "V21",
+   "kind": "numeric"
+  },
+  {
+   "name": "V22",
+   "kind": "numeric"
+  },
+  {
+   "name": "V23",
+   "kind": "numeric"
+  },
+  {
+   "name": "V24",
+   "kind": "numeric"
+  },
+  {
+   "name": "V25",
+   "kind": "numeric"
+  },
+  {
+   "name": "V26",
+   "kind": "numeric"
+  },
+  {
+   "name": "V27",
+   "kind": "numeric"
+  },
+  {
+   "name": "V28",
+   "kind": "numeric"
+  },
+  {
+   "name": "V29",
+   "kind": "numeric"
+  },
+  {
+   "name": "V30",
+   "kind": "numeric"
+  },
+  {
+   "name": "V31",
+   "kind": "numeric"
+  },
+  {
+   "name": "V32",
+   "kind": "numeric"
+  },
+  {
+   "name": "V33",
+   "kind": "numeric"
+  },
+  {
+   "name": "V34",
+   "kind": "numeric"
+  },
+  {
+   "name": "V35",
+   "kind": "numeric"
+  },
+  {
+   "name": "V36",
+   "kind": "numeric"
+  },
+  {
+   "name": "V37",
+   "kind": "numeric"
+  },
+  {
+   "name": "V38",
+   "kind": "numeric"
+  },
+  {
+   "name": "V39",
+   "kind": "numeric"
+  },
+  {
+   "name": "V40",
+   "kind": "numeric"
+  },
+  {
+   "name": "V41",
+   "kind": "numeric"
+  },
+  {
+   "name": "V42",
+   "kind": "numeric"
+  },
+  {
+   "name": "V43",
+   "kind": "numeric"
+  },
+  {
+   "name": "V44",
+   "kind": "numeric"
+  },
+  {
+   "name": "V45",
+   "kind": "numeric"
+  },
+  {
+   "name": "V46",
+   "kind": "numeric"
+  },
+  {
+   "name": "V47",
+   "kind": "numeric"
+  },
+  {
+   "name": "V48",
+   "kind": "numeric"
+  },
+  {
+   "name": "V49",
+   "kind": "numeric"
+  },
+  {
+   "name": "V50",
+   "kind": "numeric"
+  },
+  {
+   "name": "V51",
+   "kind": "numeric"
+  },
+  {
+   "name": "V52",
+   "kind": "numeric"
+  },
+  {
+   "name": "V53",
+   "kind": "numeric"
+  },
+  {
+   "name": "V54",
+   "kind": "numeric"
+  },
+  {
+   "name": "V55",
+   "kind": "numeric"
+  },
+  {
+   "name": "V56",
+   "kind": "numeric"
+  },
+  {
+   "name": "V57",
+   "kind": "numeric"
+  },
+  {
+   "name": "V58",
+   "kind": "numeric"
+  },
+  {
+   "name": "V59",
+   "kind": "numeric"
+  },
+  {
+   "name": "V60",
+   "kind": "numeric"
+  },
+  {
+   "name": "V61",
+   "kind": "numeric"
+  },
+  {
+   "name": "V62",
+   "kind": "numeric"
+  },
+  {
+   "name": "V63",
+   "kind": "numeric"
+  },
+  {
+   "name": "V64",
+   "kind": "numeric"
+  },
+  {
+   "name": "V65",
+   "kind": "numeric"
+  },
+  {
+   "name": "V66",
+   "kind": "numeric"
+  },
+  {
+   "name": "V67",
+   "kind": "numeric"
+  },
+  {
+   "name": "V68",
+   "kind": "numeric"
+  },
+  {
+   "name": "V69",
+   "kind": "numeric"
+  },
+  {
+   "name": "V70",
+   "kind": "numeric"
+  },
+  {
+   "name": "V71",
+   "kind": "numeric"
+  },
+  {
+   "name": "V72",
+   "kind": "numeric"
+  },
+  {
+   "name": "V73",
+   "kind": "numeric"
+  },
+  {
+   "name": "V74",
+   "kind": "numeric"
+  },
+  {
+   "name": "V75",
+   "kind": "numeric"
+  },
+  {
+   "name": "V76",
+   "kind": "numeric"
+  },
+  {
+   "name": "V77",
+   "kind": "numeric"
+  },
+  {
+   "name": "V78",
+   "kind": "numeric"
+  },
+  {
+   "name": "V79",
+   "kind": "numeric"
+  },
+  {
+   "name": "V80",
+   "kind": "numeric"
+  },
+  {
+   "name": "V81",
+   "kind": "numeric"
+  },
+  {
+   "name": "V82",
+   "kind": "numeric"
+  },
+  {
+   "name": "V83",
+   "kind": "numeric"
+  },
+  {
+   "name": "V84",
+   "kind": "numeric"
+  },
+  {
+   "name": "V85",
+   "kind": "numeric"
+  },
+  {
+   "name": "V86",
+   "kind": "numeric"
+  },
+  {
+   "name": "V87",
+   "kind": "numeric"
+  },
+  {
+   "name": "V88",
+   "kind": "numeric"
+  },
+  {
+   "name": "V89",
+   "kind": "numeric"
+  },
+  {
+   "name": "V90",
+   "kind": "numeric"
+  },
+  {
+   "name": "V91",
+   "kind": "numeric"
+  },
+  {
+   "name": "V92",
+   "kind": "numeric"
+  },
+  {
+   "name": "V93",
+   "kind": "numeric"
+  },
+  {
+   "name": "V94",
+   "kind": "numeric"
+  },
+  {
+   "name": "V95",
+   "kind": "numeric"
+  },
+  {
+   "name": "V96",
+   "kind": "numeric"
+  },
+  {
+   "name": "V97",
+   "kind": "numeric"
+  },
+  {
+   "name": "V98",
+   "kind": "numeric"
+  },
+  {
+   "name": "V99",
+   "kind": "numeric"
+  },
+  {
+   "name": "V100",
+   "kind": "numeric"
+  },
+  {
+   "name": "V101",
+   "kind": "numeric"
+  },
+  {
+   "name": "V102",
+   "kind": "numeric"
+  },
+  {
+   "name": "V103",
+   "kind": "numeric"
+  },
+  {
+   "name": "V104",
+   "kind": "numeric"
+  },
+  {
+   "name": "V105",
+   "kind": "numeric"
+  },
+  {
+   "name": "V106",
+   "kind": "numeric"
+  },
+  {
+   "name": "V107",
+   "kind": "numeric"
+  },
+  {
+   "name": "V108",
+   "kind": "numeric"
+  },
+  {
+   "name": "V109",
+   "kind": "numeric"
+  },
+  {
+   "name": "V110",
+   "kind": "numeric"
+  },
+  {
+   "name": "V111",
+   "kind": "numeric"
+  },
+  {
+   "name": "V112",
+   "kind": "numeric"
+  },
+  {
+   "name": "V113",
+   "kind": "numeric"
+  },
+  {
+   "name": "V114",
+   "kind": "numeric"
+  },
+  {
+   "name": "V115",
+   "kind": "numeric"
+  },
+  {
+   "name": "V116",
+   "kind": "numeric"
+  },
+  {
+   "name": "V117",
+   "kind": "numeric"
+  },
+  {
+   "name": "V118",
+   "kind": "numeric"
+  },
+  {
+   "name": "V119",
+   "kind": "numeric"
+  },
+  {
+   "name": "V120",
+   "kind": "numeric"
+  },
+  {
+   "name": "V121",
+   "kind": "numeric"
+  },
+  {
+   "name": "V122",
+   "kind": "numeric"
+  },
+  {
+   "name": "V123",
+   "kind": "numeric"
+  },
+  {
+   "name": "V124",
+   "kind": "numeric"
+  },
+  {
+   "name": "V125",
+   "kind": "numeric"
+  },
+  {
+   "name": "V126",
+   "kind": "numeric"
+  },
+  {
+   "name": "V127",
+   "kind": "numeric"
+  },
+  {
+   "name": "V128",
+   "kind": "numeric"
+  },
+  {
+   "name": "V129",
+   "kind": "numeric"
+  },
+  {
+   "name": "V130",
+   "kind": "numeric"
+  },
+  {
+   "name": "V131",
+   "kind": "numeric"
+  },
+  {
+   "name": "V132",
+   "kind": "numeric"
+  },
+  {
+   "name": "V133",
+   "kind": "numeric"
+  },
+  {
+   "name": "V134",
+   "kind": "numeric"
+  },
+  {
+   "name": "V135",
+   "kind": "numeric"
+  },
+  {
+   "name": "V136",
+   "kind": "numeric"
+  },
+  {
+   "name": "V137",
+   "kind": "numeric"
+  },
+  {
+   "name": "V138",
+   "kind": "numeric"
+  },
+  {
+   "name": "V139",
+   "kind": "numeric"
+  },
+  {
+   "name": "V140",
+   "kind": "numeric"
+  },
+  {
+   "name": "V141",
+   "kind": "numeric"
+  },
+  {
+   "name": "V142",
+   "kind": "numeric"
+  },
+  {
+   "name": "V143",
+   "kind": "numeric"
+  },
+  {
+   "name": "V144",
+   "kind": "numeric"
+  },
+  {
+   "name": "V145",
+   "kind": "numeric"
+  },
+  {
+   "name": "V146",
+   "kind": "numeric"
+  },
+  {
+   "name": "V147",
+   "kind": "numeric"
+  },
+  {
+   "name": "V148",
+   "kind": "numeric"
+  },
+  {
+   "name": "V149",
+   "kind": "numeric"
+  },
+  {
+   "name": "V150",
+   "kind": "numeric"
+  },
+  {
+   "name": "V151",
+   "kind": "numeric"
+  },
+  {
+   "name": "V152",
+   "kind": "numeric"
+  },
+  {
+   "name": "V153",
+   "kind": "numeric"
+  },
+  {
+   "name": "V154",
+   "kind": "numeric"
+  },
+  {
+   "name": "V155",
+   "kind": "numeric"
+  },
+  {
+   "name": "V156",
+   "kind": "numeric"
+  },
+  {
+   "name": "V157",
+   "kind": "numeric"
+  },
+  {
+   "name": "V158",
+   "kind": "numeric"
+  },
+  {
+   "name": "V159",
+   "kind": "numeric"
+  },
+  {
+   "name": "V160",
+   "kind": "numeric"
+  },
+  {
+   "name": "V161",
+   "kind": "numeric"
+  },
+  {
+   "name": "V162",
+   "kind": "numeric"
+  },
+  {
+   "name": "V163",
+   "kind": "numeric"
+  },
+  {
+   "name": "V164",
+   "kind": "numeric"
+  },
+  {
+   "name": "V165",
+   "kind": "numeric"
+  },
+  {
+   "name": "V166",
+   "kind": "numeric"
+  },
+  {
+   "name": "V167",
+   "kind": "numeric"
+  },
+  {
+   "name": "V168",
+   "kind": "numeric"
+  },
+  {
+   "name": "V169",
+   "kind": "numeric"
+  },
+  {
+   "name": "V170",
+   "kind": "numeric"
+  },
+  {
+   "name": "V171",
+   "kind": "numeric"
+  },
+  {
+   "name": "V172",
+   "kind": "numeric"
+  },
+  {
+   "name": "V173",
+   "kind": "numeric"
+  },
+  {
+   "name": "V174",
+   "kind": "numeric"
+  },
+  {
+   "name": "V175",
+   "kind": "numeric"
+  },
+  {
+   "name": "V176",
+   "kind": "numeric"
+  },
+  {
+   "name": "V177",
+   "kind": "numeric"
+  },
+  {
+   "name": "V178",
+   "kind": "numeric"
+  },
+  {
+   "name": "V179",
+   "kind": "numeric"
+  },
+  {
+   "name": "V180",
+   "kind": "numeric"
+  },
+  {
+   "name": "V181",
+   "kind": "numeric"
+  },
+  {
+   "name": "V182",
+   "kind": "numeric"
+  },
+  {
+   "name": "V183",
+   "kind": "numeric"
+  },
+  {
+   "name": "V184",
+   "kind": "numeric"
+  },
+  {
+   "name": "V185",
+   "kind": "numeric"
+  },
+  {
+   "name": "V186",
+   "kind": "numeric"
+  },
+  {
+   "name": "V187",
+   "kind": "numeric"
+  },
+  {
+   "name": "V188",
+   "kind": "numeric"
+  },
+  {
+   "name": "V189",
+   "kind": "numeric"
+  },
+  {
+   "name": "V190",
+   "kind": "numeric"
+  },
+  {
+   "name": "V191",
+   "kind": "numeric"
+  },
+  {
+   "name": "V192",
+   "kind": "numeric"
+  },
+  {
+   "name": "V193",
+   "kind": "numeric"
+  },
+  {
+   "name": "V194",
+   "kind": "numeric"
+  },
+  {
+   "name": "V195",
+   "kind": "numeric"
+  },
+  {
+   "name": "V196",
+   "kind": "numeric"
+  },
+  {
+   "name": "V197",
+   "kind": "numeric"
+  },
+  {
+   "name": "V198",
+   "kind": "numeric"
+  },
+  {
+   "name": "V199",
+   "kind": "numeric"
+  },
+  {
+   "name": "V200",
+   "kind": "numeric"
+  },
+  {
+   "name": "V201",
+   "kind": "numeric"
+  },
+  {
+   "name": "V202",
+   "kind": "numeric"
+  },
+  {
+   "name": "V203",
+   "kind": "numeric"
+  },
+  {
+   "name": "V204",
+   "kind": "numeric"
+  },
+  {
+   "name": "V205",
+   "kind": "numeric"
+  },
+  {
+   "name": "V206",
+   "kind": "numeric"
+  },
+  {
+   "name": "V207",
+   "kind": "numeric"
+  },
+  {
+   "name": "V208",
+   "kind": "numeric"
+  },
+  {
+   "name": "V209",
+   "kind": "numeric"
+  },
+  {
+   "name": "V210",
+   "kind": "numeric"
+  },
+  {
+   "name": "V211",
+   "kind": "numeric"
+  },
+  {
+   "name": "V212",
+   "kind": "numeric"
+  },
+  {
+   "name": "V213",
+   "kind": "numeric"
+  },
+  {
+   "name": "V214",
+   "kind": "numeric"
+  },
+  {
+   "name": "V215",
+   "kind": "numeric"
+  },
+  {
+   "name": "V216",
+   "kind": "numeric"
+  },
+  {
+   "name": "V217",
+   "kind": "numeric"
+  },
+  {
+   "name": "V218",
+   "kind": "numeric"
+  },
+  {
+   "name": "V219",
+   "kind": "numeric"
+  },
+  {
+   "name": "V220",
+   "kind": "numeric"
+  },
+  {
+   "name": "V221",
+   "kind": "numeric"
+  },
+  {
+   "name": "V222",
+   "kind": "numeric"
+  },
+  {
+   "name": "V223",
+   "kind": "numeric"
+  },
+  {
+   "name": "V224",
+   "kind": "numeric"
+  },
+  {
+   "name": "V225",
+   "kind": "numeric"
+  },
+  {
+   "name": "V226",
+   "kind": "numeric"
+  },
+  {
+   "name": "V227",
+   "kind": "numeric"
+  },
+  {
+   "name": "V228",
+   "kind": "numeric"
+  },
+  {
+   "name": "V229",
+   "kind": "numeric"
+  },
+  {
+   "name": "V230",
+   "kind": "numeric"
+  },
+  {
+   "name": "V231",
+   "kind": "numeric"
+  },
+  {
+   "name": "V232",
+   "kind": "numeric"
+  },
+  {
+   "name": "V233",
+   "kind": "numeric"
+  },
+  {
+   "name": "V234",
+   "kind": "numeric"
+  },
+  {
+   "name": "V235",
+   "kind": "numeric"
+  },
+  {
+   "name": "V236",
+   "kind": "numeric"
+  },
+  {
+   "name": "V237",
+   "kind": "numeric"
+  },
+  {
+   "name": "V238",
+   "kind": "numeric"
+  },
+  {
+   "name": "V239",
+   "kind": "numeric"
+  },
+  {
+   "name": "V240",
+   "kind": "numeric"
+  },
+  {
+   "name": "V241",
+   "kind": "numeric"
+  },
+  {
+   "name": "V242",
+   "kind": "numeric"
+  },
+  {
+   "name": "V243",
+   "kind": "numeric"
+  },
+  {
+   "name": "V244",
+   "kind": "numeric"
+  },
+  {
+   "name": "V245",
+   "kind": "numeric"
+  },
+  {
+   "name": "V246",
+   "kind": "numeric"
+  },
+  {
+   "name": "V247",
+   "kind": "numeric"
+  },
+  {
+   "name": "V248",
+   "kind": "numeric"
+  },
+  {
+   "name": "V249",
+   "kind": "numeric"
+  },
+  {
+   "name": "V250",
+   "kind": "numeric"
+  },
+  {
+   "name": "V251",
+   "kind": "numeric"
+  },
+  {
+   "name": "V252",
+   "kind": "numeric"
+  },
+  {
+   "name": "V253",
+   "kind": "numeric"
+  },
+  {
+   "name": "V254",
+   "kind": "numeric"
+  },
+  {
+   "name": "V255",
+   "kind": "numeric"
+  },
+  {
+   "name": "V256",
+   "kind": "numeric"
+  },
+  {
+   "name": "V257",
+   "kind": "numeric"
+  },
+  {
+   "name": "V258",
+   "kind": "numeric"
+  },
+  {
+   "name": "V259",
+   "kind": "numeric"
+  },
+  {
+   "name": "V260",
+   "kind": "numeric"
+  },
+  {
+   "name": "V261",
+   "kind": "numeric"
+  },
+  {
+   "name": "V262",
+   "kind": "numeric"
+  },
+  {
+   "name": "V263",
+   "kind": "numeric"
+  },
+  {
+   "name": "V264",
+   "kind": "numeric"
+  },
+  {
+   "name": "V265",
+   "kind": "numeric"
+  },
+  {
+   "name": "V266",
+   "kind": "numeric"
+  },
+  {
+   "name": "V267",
+   "kind": "numeric"
+  },
+  {
+   "name": "V268",
+   "kind": "numeric"
+  },
+  {
+   "name": "V269",
+   "kind": "numeric"
+  },
+  {
+   "name": "V270",
+   "kind": "numeric"
+  },
+  {
+   "name": "V271",
+   "kind": "numeric"
+  },
+  {
+   "name": "V272",
+   "kind": "numeric"
+  },
+  {
+   "name": "V273",
+   "kind": "numeric"
+  },
+  {
+   "name": "V274",
+   "kind": "numeric"
+  },
+  {
+   "name": "V275",
+   "kind": "numeric"
+  },
+  {
+   "name": "V276",
+   "kind": "numeric"
+  },
+  {
+   "name": "V277",
+   "kind": "numeric"
+  },
+  {
+   "name": "V278",
+   "kind": "numeric"
+  },
+  {
+   "name": "V279",
+   "kind": "numeric"
+  },
+  {
+   "name": "V280",
+   "kind": "numeric"
+  },
+  {
+   "name": "V281",
+   "kind": "numeric"
+  },
+  {
+   "name": "V282",
+   "kind": "numeric"
+  },
+  {
+   "name": "V283",
+   "kind": "numeric"
+  },
+  {
+   "name": "V284",
+   "kind": "numeric"
+  },
+  {
+   "name": "V285",
+   "kind": "numeric"
+  },
+  {
+   "name": "V286",
+   "kind": "numeric"
+  },
+  {
+   "name": "V287",
+   "kind": "numeric"
+  },
+  {
+   "name": "V288",
+   "kind": "numeric"
+  },
+  {
+   "name": "V289",
+   "kind": "numeric"
+  },
+  {
+   "name": "V290",
+   "kind": "numeric"
+  },
+  {
+   "name": "V291",
+   "kind": "numeric"
+  },
+  {
+   "name": "V292",
+   "kind": "numeric"
+  },
+  {
+   "name": "V293",
+   "kind": "numeric"
+  },
+  {
+   "name": "V294",
+   "kind": "numeric"
+  },
+  {
+   "name": "V295",
+   "kind": "numeric"
+  },
+  {
+   "name": "V296",
+   "kind": "numeric"
+  },
+  {
+   "name": "V297",
+   "kind": "numeric"
+  },
+  {
+   "name": "V298",
+   "kind": "numeric"
+  },
+  {
+   "name": "V299",
+   "kind": "numeric"
+  },
+  {
+   "name": "V300",
+   "kind": "numeric"
+  },
+  {
+   "name": "V301",
+   "kind": "numeric"
+  },
+  {
+   "name": "V302",
+   "kind": "numeric"
+  },
+  {
+   "name": "V303",
+   "kind": "numeric"
+  },
+  {
+   "name": "V304",
+   "kind": "numeric"
+  },
+  {
+   "name": "V305",
+   "kind": "numeric"
+  },
+  {
+   "name": "V306",
+   "kind": "numeric"
+  },
+  {
+   "name": "V307",
+   "kind": "numeric"
+  },
+  {
+   "name": "V308",
+   "kind": "numeric"
+  },
+  {
+   "name": "V309",
+   "kind": "numeric"
+  },
+  {
+   "name": "V310",
+   "kind": "numeric"
+  },
+  {
+   "name": "V311",
+   "kind": "numeric"
+  },
+  {
+   "name": "V312",
+   "kind": "numeric"
+  },
+  {
+   "name": "V313",
+   "kind": "numeric"
+  },
+  {
+   "name": "V314",
+   "kind": "numeric"
+  },
+  {
+   "name": "V315",
+   "kind": "numeric"
+  },
+  {
+   "name": "V316",
+   "kind": "numeric"
+  },
+  {
+   "name": "V317",
+   "kind": "numeric"
+  },
+  {
+   "name": "V318",
+   "kind": "numeric"
+  },
+  {
+   "name": "V319",
+   "kind": "numeric"
+  },
+  {
+   "name": "V320",
+   "kind": "numeric"
+  },
+  {
+   "name": "V321",
+   "kind": "numeric"
+  },
+  {
+   "name": "V322",
+   "kind": "numeric"
+  },
+  {
+   "name": "V323",
+   "kind": "numeric"
+  },
+  {
+   "name": "V324",
+   "kind": "numeric"
+  },
+  {
+   "name": "V325",
+   "kind": "numeric"
+  },
+  {
+   "name": "V326",
+   "kind": "numeric"
+  },
+  {
+   "name": "V327",
+   "kind": "numeric"
+  },
+  {
+   "name": "V328",
+   "kind": "numeric"
+  },
+  {
+   "name": "V329",
+   "kind": "numeric"
+  },
+  {
+   "name": "V330",
+   "kind": "numeric"
+  },
+  {
+   "name": "V331",
+   "kind": "numeric"
+  },
+  {
+   "name": "V332",
+   "kind": "numeric"
+  },
+  {
+   "name": "V333",
+   "kind": "numeric"
+  },
+  {
+   "name": "V334",
+   "kind": "numeric"
+  },
+  {
+   "name": "V335",
+   "kind": "numeric"
+  },
+  {
+   "name": "V336",
+   "kind": "numeric"
+  },
+  {
+   "name": "V337",
+   "kind": "numeric"
+  },
+  {
+   "name": "V338",
+   "kind": "numeric"
+  },
+  {
+   "name": "V339",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_01",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_02",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_03",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_04",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_05",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_06",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_07",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_08",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_09",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_10",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_11",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_12",
+   "kind": "categorical"
+  },
+  {
+   "name": "id_13",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_14",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_15",
+   "kind": "categorical"
+  },
+  {
+   "name": "id_16",
+   "kind": "categorical"
+  },
+  {
+   "name": "id_17",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_18",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_19",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_20",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_21",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_22",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_23",
+   "kind": "categorical"
+  },
+  {
+   "name": "id_24",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_25",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_26",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_27",
+   "kind": "categorical"
+  },
+  {
+   "name": "id_28",
+   "kind": "categorical"
+  },
+  {
+   "name": "id_29",
+   "kind": "categorical"
+  },
+  {
+   "name": "id_30",
+   "kind": "categorical"
+  },
+  {
+   "name": "id_31",
+   "kind": "categorical"
+  },
+  {
+   "name": "id_32",
+   "kind": "numeric"
+  },
+  {
+   "name": "id_33",
+   "kind": "categorical"
+  },
+  {
+   "name": "id_34",
+   "kind": "categorical"
+  },
+  {
+   "name": "id_35",
+   "kind": "categorical"
+  },
+  {
+   "name": "id_36",
+   "kind": "categorical"
+  },
+  {
+   "name": "id_37",
+   "kind": "categorical"
+  },
+  {
+   "name": "id_38",
+   "kind": "categorical"
+  },
+  {
+   "name": "DeviceType",
+   "kind": "categorical"
+  },
+  {
+   "name": "DeviceInfo",
+   "kind": "categorical"
+  },
+  {
+   "name": "has_identity",
+   "kind": "numeric"
+  },
+  {
+   "name": "hour",
+   "kind": "numeric"
+  },
+  {
+   "name": "weekday",
+   "kind": "numeric"
+  },
+  {
+   "name": "n_missing_V",
+   "kind": "numeric"
+  },
+  {
+   "name": "n_missing_D",
+   "kind": "numeric"
+  },
+  {
+   "name": "n_missing_M",
+   "kind": "numeric"
+  },
+  {
+   "name": "n_missing_id",
+   "kind": "numeric"
+  },
+  {
+   "name": "amount_group",
+   "kind": "categorical"
+  },
+  {
+   "name": "is_large_amount",
+   "kind": "numeric"
+  },
+  {
+   "name": "card_type_group",
+   "kind": "categorical"
+  },
+  {
+   "name": "card_category_group",
+   "kind": "categorical"
+  },
+  {
+   "name": "P_email_provider",
+   "kind": "categorical"
+  },
+  {
+   "name": "R_email_provider",
+   "kind": "categorical"
+  },
+  {
+   "name": "P_email_domain_freq",
+   "kind": "numeric"
+  },
+  {
+   "name": "R_email_domain_freq",
+   "kind": "numeric"
+  },
+  {
+   "name": "email_same_domain",
+   "kind": "numeric"
+  },
+  {
+   "name": "device_os",
+   "kind": "categorical"
+  },
+  {
+   "name": "device_brand",
+   "kind": "categorical"
+  },
+  {
+   "name": "device_model_family",
+   "kind": "categorical"
+  },
+  {
+   "name": "group_prev_transactions",
+   "kind": "numeric"
+  },
+  {
+   "name": "group_prev_amount_mean",
+   "kind": "numeric"
+  },
+  {
+   "name": "group_prev_amount_min",
+   "kind": "numeric"
+  },
+  {
+   "name": "group_prev_amount_max",
+   "kind": "numeric"
+  },
+  {
+   "name": "group_time_since_prev",
+   "kind": "numeric"
+  },
+  {
+   "name": "group_first_operation",
+   "kind": "numeric"
+  },
+  {
+   "name": "group_time_since_prev_bin",
+   "kind": "categorical"
+  },
+  {
+   "name": "group_prev_amount_mean_bin",
+   "kind": "categorical"
+  }
+ ]
+}

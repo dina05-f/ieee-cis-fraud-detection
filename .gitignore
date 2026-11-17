@@ -1,0 +1,75 @@
+# ---------- окружение, кэш, IDE ----------
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- секреты: никогда в git ----------
+.streamlit/secrets.toml
+secrets.toml
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+.huggingface/
+.netrc
+
+# ---------- модели и веса: только приватный Hugging Face Hub ----------
+# Модель LightGBM сохраняется как текстовый .txt с любым именем, поэтому исключены ВСЕ .txt,
+# кроме файлов зависимостей ниже.
+*.txt
+!requirements.txt
+!requirements-dev.txt
+*.cbm
+*.joblib
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.bin
+*.onnx
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.model
+*.lgb
+*.lgbm
+models/
+
+# ---------- данные соревнования и производные таблицы: только локально (правила Kaggle) ----------
+*.csv
+!templates/features_template.csv
+*.tsv
+*.parquet
+*.feather
+*.arrow
+*.xls
+*.xlsx
+*.json.gz
+data/
+local_data/
+
+# ---------- архивы, журналы, выгрузки ----------
+*.zip
+*.gz
+*.tar
+*.7z
+*.rar
+*.log
+logs/
