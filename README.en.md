@@ -2,8 +2,9 @@
 
 *Русская версия: [README.md](README.md)*
 
-**Live demo:** [huggingface.co/spaces/dina-05-fff/anti-fraud-lightgbm-demo](https://huggingface.co/spaces/dina-05-fff/anti-fraud-lightgbm-demo)
-— the model scores synthetic transactions, nothing to install.
+**Live demo:** [anti-fraud-lightgbm.streamlit.app](https://anti-fraud-lightgbm.streamlit.app)
+— the model scores synthetic transactions, nothing to install. If the app is asleep, click the wake-up button and wait
+about a minute.
 
 ## Project goal
 
@@ -74,7 +75,7 @@ device data.
 | Part | What it does |
 |---|---|
 | `app.py` | main app: upload a CSV with 458 prepared features → probability and decision for each transaction |
-| `demo/` | demo: generates synthetic transactions and scores them with the real LightGBM II model (runs in the Space) |
+| `demo/` | demo: generates synthetic transactions and scores them with the real LightGBM II model. `demo/cloud_app.py` is the Streamlit Community Cloud entry point (downloads the model using the `HF_REPO_ID`, `HF_TOKEN` secrets) |
 | `fraud_app/` | model loading and verification, input validation, prediction |
 | `config/` | model parameters and the list of 458 features |
 | `tests/`, `demo/tests/` | automated tests |
