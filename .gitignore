@@ -33,6 +33,7 @@ secrets.toml
 *.txt
 !requirements.txt
 !requirements-dev.txt
+!packages.txt
 *.cbm
 *.joblib
 *.pkl
