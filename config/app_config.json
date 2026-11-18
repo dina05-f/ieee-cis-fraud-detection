@@ -1,5 +1,5 @@
 {
- "model_name": "LightGBM II (ноутбуки 13–14)",
+ "model_name": "LightGBM II",
  "hf_repo_id": "<заполнить после согласования: владелец/имя-приватного-репозитория>",
  "model_filename": "lgbm_B_full.txt",
  "model_sha256": "f413c46fe5a22e1873af666562459702eb94a9dda00126a73b9d27809e757f2c",

@@ -73,3 +73,6 @@ local_data/
 *.rar
 *.log
 logs/
+
+# ---------- local-only experimental app (not published) ----------
+check/

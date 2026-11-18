@@ -53,6 +53,36 @@ def test_full_flow_local(booster, cfg, local_csv):
     assert any("Скачать результаты" in b.proto.label for b in at.get("download_button"))
 
 
+def test_page_structure_before_upload(booster):
+    at = _app(booster)
+    heads = [h.value for h in at.subheader]
+    assert "Как пользоваться" in heads and "Загрузка файла" in heads
+    assert any("Исходные транзакции не принимаются" in i.value and "preprocessing" in i.value for i in at.info)
+    labels = [e.label for e in at.expander]
+    assert "О модели" in labels and "Подробные правила формата" in labels
+    assert len(at.number_input) == 0 and len(at.metric) == 0       # порог и результаты — только после загрузки
+
+
+def test_decision_column_on_screen_only(booster, schema, cfg):
+    # Строки с пустыми признаками (пропуск разрешён) — без реальных данных.
+    from fraud_app.predict import result_table
+    header = [schema.id_column] + list(schema.names)
+    data = pd.DataFrame([["T1"] + [""] * len(schema.names), ["T2"] + [""] * len(schema.names)], columns=header)
+    at = _app(booster)
+    at.file_uploader[0].set_value(("empty_rows.csv", data.to_csv(index=False).encode("utf-8"), "text/csv"))
+    at.run()
+    assert not at.exception and not at.error
+    assert abs(at.number_input[0].value - cfg["default_threshold"]) < 1e-12
+    view = at.dataframe[0].value
+    assert list(view.columns).index("Решение") == list(view.columns).index("predicted_class") + 1
+    assert (view["Решение"] == view["predicted_class"].map({1: "Тревога", 0: "Обычная операция"})).all()
+    assert "Как читать результаты" in [e.label for e in at.expander]
+    # скачиваемый CSV строится из result_table — столбца «Решение» в нём нет
+    out = result_table(view["fraud_probability"].to_numpy(), cfg["default_threshold"], view[schema.id_column],
+                       schema.id_column)
+    assert "Решение" not in out.columns
+
+
 def test_results_file_name():
     from fraud_app.predict import results_file_name
     sha = "f413c46fe5a22e1873af666562459702eb94a9dda00126a73b9d27809e757f2c"
