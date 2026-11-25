@@ -6,6 +6,9 @@
 — the model scores synthetic transactions, nothing to install. If the app is asleep, click the wake-up button and wait
 about a minute.
 
+**The full version of the app** — checking a single transaction in two modes — runs locally and is shown at the
+project defence. It is not included in this repository because it uses real competition data.
+
 ## Project goal
 
 Build a model that estimates the **fraud risk** of a bank transaction and catches as many fraudulent transactions as
